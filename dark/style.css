@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color:var(--text-color);
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --bg-color:#000000;
+    --text-color:#ffffff;
+    --primary-color:#ff0000;
+    --box-color:#2b2b2b;
+
+}
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100%;
+    color:var(--text-color);
+
+}
+.header{
+    position:fixed;
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    align-items: center;
+    width: 100%;
+
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+a.logo{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+div.nav a{
+    
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+div.nav a:hover,
+div.nav a.active{
+    color: var(--primary-color);
+}
+#main-menu{
+    font-size: 3.5rem;
+    color:var(--text-color);
+    display: none;
+}
+.mood a{
+    background-color: var(--primary-color);
+    padding: .3rem;
+    border-radius: .8rem;
+    
+}
+div.salam{
+    color:var(--text-color);
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    position: absolute;
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-contain h3{
+    font-size: 1.5rem;
+    font-weight:700 ;
+
+}
+.home-contain h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height:1.3 ;
+}
+span{
+    color: var(--primary-color);
+    text-shadow: 0 0 1rem var(--primary-color);
+}
+.home-img img{
+    height: 35vw;
+    width: auto;
+    
+}
+
+.btn{
+    margin-top:1rem ;
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    background: var(--primary-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--primary-color);
+    font-size: 0.8rem;
+    color: var(--text-color);
+    letter-spacing: 0.09rem;
+    text-decoration: none;
+
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.about-img img{
+    height: 35vw;
+}
+.about-contain{
+    margin-left: 1.5rem;
+}
+.about-contain h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+}
+.about-contain h3{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.about-contain p{
+    font-size: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.services h1{
+    font-size: 3rem;
+    margin-bottom:4rem ;
+    text-align: center;
+}
+
+.services-contain{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-contain .services-box{
+     flex:1 1 15rem;
+     background:var(--box-color) ;
+     padding: 3rem 2rem 4rem;
+     border-radius: 2rem;
+     text-align: center;
+     border: 0.2rem solid var(--bg-color);
+     transition: .5s ease;
+     
+}
+.services-contain .services-box:hover{
+    border-color: var(--primary-color);
+    transform: scale(1.03);
+}
+.services-box i{
+    font-size: 2rem;
+    border:.3rem solid var(--primary-color);
+    border-radius: 50%;
+    text-shadow:0 0 1rem var(--primary-color) ;
+}
+.services-box h3,p{
+    margin:1rem;
+}
+
+
+.contact h1{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: .6rem;
+    font-size: 1rem;
+    background: var(--box-color);
+    border-radius: .5rem;
+    margin: 0.3rem 0;
+    resize: none;
+}
+.contact form .input-box input{
+    width: 49.5%;
+}
+.footer{
+    background-color: var(--box-color);
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.footer-btn{
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 0 1rem var(--primary-color);
+    border-radius: 0.2rem;
+    margin-right: 1rem;
+}
+
+@media (max-widht: 700px){
+    .header{
+        padding:.3rem;
+    }
+}
